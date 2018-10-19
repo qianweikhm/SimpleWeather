@@ -1,0 +1,85 @@
+<view class="setting">
+  <!-- 自定义功能 -->
+  <view class="s">
+
+
+    <view class="t">
+      <view class="title">
+        <view>自定义</view>
+      </view>
+      <view class="content">
+        <view class="item">
+          <view>打开顶部城市天气快捷搜索</view>
+          <switch color="#40a7e7e" />
+        </view>
+        <view class="item">
+          <view>显示生活指数信息</view>
+          <switch color="#40a7e7e" />
+        </view>
+      </view>
+    </view>
+
+
+
+    <view class="t">
+      <view class="title">
+        <view>检查更新</view>
+      </view>
+      <view class="content">
+        <view class="item">
+          <view>打开首页更新提醒</view>
+          <switch color="#40a7e7e" />
+        </view>
+      </view>
+    </view>
+
+
+    <view class="t">
+      <view class="title">
+        <view>小工具</view>
+      </view>
+      <view class="content sub">
+        <view class="subtitle">NFC</view>
+        <view class="item" catchtap="getHCEState">
+          <view>检测是否支持NFC</view>
+          <image class='more' src='/img/arrow.png'></image>
+        </view>
+      </view>
+
+      <view class="content sub">
+        <view class="subtitle">屏幕亮度</view>
+        <view class="item">
+          <view>当前屏幕亮度</view>
+          <view class='tip'>范围0~100，0 最暗，100 最亮</view>
+        </view>
+      </view>
+
+      <view class="content sub">
+        <view class="subtitle">系统信息</view>
+        <view class="item">
+          <view>查看系统信息</view>
+         <image class='more' src='/img/arrow.png'></image>
+        </view>
+      </view>
+    </view>
+
+
+
+    
+      <view class="t">
+        <view class="title">
+          <view>清除数据</view>
+        </view>
+        <view class="content">
+          <view class="item">
+            <view>清除本地数据</view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+
+
+
+
+</view>

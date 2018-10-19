@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/citychoose/citychoose",
+    "pages/setting/setting",
+    "pages/systeminfo/systeminfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#40a7e7",
+    "navigationBarTitleText": "简单天气",
+    "navigationBarTextStyle": "light"
+  }
+}

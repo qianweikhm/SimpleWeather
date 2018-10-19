@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="wrapper">
+    <view class="search">
+      <view class="inner">
+        <image class="icon" src="/img/search_grey.png"></image>
+        <input value="{{ inputTxt }}" placeholder="搜索城市"  maxlength="20" confirm-type="搜索" bindinput="inputFilter"/>
+      </view>
+      <text class="cancel" catchtap="cancel">清空</text>
+    </view>
+  </view>
+
+
+  <view class="top" wx:if="{{hotCities.length}}">
+    <view class="title">热门城市</view>
+    <view class="items">
+      <view class="item" hover-class="hover-ddd" catchtap='choose' wx:key="{{ index }}" wx:for="{{hotCities}}">{{ item.name }}</view>
+    </view>
+  </view>
+
+
+  <view class="bottom">
+    <view wx:for="{{showItems}}" wx:key="{{ index }}">
+      <view class="key">{{index}}</view>
+      <view class="values">
+        <view wx:key="{{ index }}" class="value" data-item='{{item}}' hover-class="hover" wx:for="{{item}}" catchtap="choose">{{ item.name }}</view>
+      </view>
+    </view>
+  </view>
+</view>
